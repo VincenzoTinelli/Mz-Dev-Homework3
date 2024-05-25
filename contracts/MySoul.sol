@@ -26,16 +26,15 @@ contract MySoul is ERC1155Supply, Ownable {
       
     }
 
-    function mint(address account, uint256 id, uint256 amount, bytes memory data) external onlyOwner {
-        _mint(account, id, amount, data);
+    function mint(address to, uint256 id, uint256 amount, bytes memory data) external onlyOwner {
+        _mint(to, id, amount, data);
     }
     
     function mintBatch(address to, uint256[] memory ids, uint256[] memory amounts, bytes memory data) external onlyOwner {
     _mintBatch(to, ids, amounts, data);
     }
 
-    function setTokenUri(uint256 tokenId, string memory tokenUri) public onlyOwner {
-        require(bytes(tokenUri).length > 0, "Cannot set uri twice");
+    function setTokenUri(uint256 tokenId, string calldata tokenUri) external onlyOwner {
         _uris[tokenId] = tokenUri;
     }
 
