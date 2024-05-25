@@ -21,7 +21,7 @@ contract MySoul is ERC1155Supply, Ownable {
 
     mapping (uint256 => string) private _uris;
 
-    constructor() ERC1155("ipfs://QmU3L2Ra2snhjM4KKMfKQgA5M9HK124Cu88gh6YavSiJNo/{id}.json") {
+    constructor() ERC1155("ipfs://QmW4AvUCLqjovVvLL6aEQBwzR11yonSrBFhN4MCVPPrcoH/{id}.json") {
       
       
     }

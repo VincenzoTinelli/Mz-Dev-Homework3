@@ -6,7 +6,7 @@ require("@nomicfoundation/hardhat-chai-matchers");
 let mySoulContract;
 
 describe("My soul contract test", function (accounts) {
-  baseURI = "ipfs://QmU3L2Ra2snhjM4KKMfKQgA5M9HK124Cu88gh6YavSiJNo/";
+  baseURI = "ipfs://QmW4AvUCLqjovVvLL6aEQBwzR11yonSrBFhN4MCVPPrcoH/";
 
   it("contract setup", async function () {
     [owner, user1, user2, user3] = await ethers.getSigners();
