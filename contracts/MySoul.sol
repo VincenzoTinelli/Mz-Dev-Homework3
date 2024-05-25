@@ -4,9 +4,8 @@ pragma solidity ^0.8.19;
 // import "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract My1155Token is ERC1155Supply, Ownable {
+contract MySoul is ERC1155Supply, Ownable {
 
     uint256 public constant Soul = 1;
     uint256 public constant Life = 2;
@@ -23,6 +22,7 @@ contract My1155Token is ERC1155Supply, Ownable {
     mapping (uint256 => string) private _uris;
 
     constructor() ERC1155("https://peach-managing-marmot-708.mypinata.cloud/ipfs/QmUUS9a8V4g4rkX5Xo8AoEPuUP4posYKcrsbkGYU7UDLvM/{id}.json") {
+      
       
     }
 

@@ -15,7 +15,7 @@ module.exports = {
   networks: {
     hardhat: {},
     dashboard: {
-      url: "http//localhost:24012/rpc",
+      url: "http://localhost:24012/rpc",
     },
     sepolia: {
       chainId: 11155111,
