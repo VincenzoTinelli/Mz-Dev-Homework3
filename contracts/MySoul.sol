@@ -21,7 +21,7 @@ contract MySoul is ERC1155Supply, Ownable {
 
     mapping (uint256 => string) private _uris;
 
-    constructor() ERC1155("https://peach-managing-marmot-708.mypinata.cloud/ipfs/QmUUS9a8V4g4rkX5Xo8AoEPuUP4posYKcrsbkGYU7UDLvM/{id}.json") {
+    constructor() ERC1155("ipfs://QmU3L2Ra2snhjM4KKMfKQgA5M9HK124Cu88gh6YavSiJNo/{id}.json") {
       
       
     }
