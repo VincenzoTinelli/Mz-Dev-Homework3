@@ -21,6 +21,10 @@ module.exports = {
       chainId: 11155111,
       url: "https://ethereum-sepolia-rpc.publicnode.com",
     },
+    amoy: {
+      chainId: 80002,
+      url: "https://polygon-amoy-bor-rpc.publicnode.com",
+    },
   },
   docgen: {
     sourcesDir: "contracts",
