@@ -39,11 +39,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       sepolia: process.env.ETHERSCAN_KEY,
-    },
-  },
-  polygonscan: {
-    apiKey: {
-      amoy: process.env.POLYGONSCAN_KEY,
+      amoy: process.env.POLYGONSCAN_API_KEY,
     },
   },
 };
